@@ -1,0 +1,21 @@
+main {
+     void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        ArrayUtilities arrayUtilities = new ArrayUtilities();
+
+    
+        System.out.print("Enter the size of the array: ");
+        int size = scanner.nextInt();
+        int[] myArray = new int[size];
+
+        
+        myArray = arrayUtilities.insertElement(myArray, size);
+
+
+        arrayUtilities.printArray(myArray, size);
+
+
+        int total = arrayUtilities.totalOfElements(myArray, size);
+        System.out.println("Total of the elements: " + total);
+    }
+}
